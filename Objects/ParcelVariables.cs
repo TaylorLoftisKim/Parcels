@@ -44,9 +44,10 @@ namespace Parcel.Objects
     {
       _length = newLength;
     }
-    public void SetVolume(int newWidth, int newHeight, int newLength, int newVolume)
+    public int SetVolume()
     {
-      newVolume = newWidth * newHeight * newLength;
+      _volume = _width * _height * _length;
+      return _volume;
     }
   }
 }
