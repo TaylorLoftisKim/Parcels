@@ -7,6 +7,7 @@ namespace Parcel.Objects
     private int _width;
     private int _length;
     private int _volume;
+    private int _price;
 
     public int GetHeight()
     {
@@ -28,6 +29,10 @@ namespace Parcel.Objects
     {
       return _volume;
     }
+    public int GetPrice()
+    {
+      return _price;
+    }
     public void SetHeight(int newHeight)
     {
       _height = newHeight;
@@ -48,6 +53,11 @@ namespace Parcel.Objects
     {
       _volume = _width * _height * _length;
       return _volume;
+    }
+    public int SetPrice()
+    {
+      _price = _width + _height + _length;
+      return _price;
     }
   }
 }

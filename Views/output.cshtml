@@ -2,10 +2,11 @@
 <html>
   <head>
     <meta charset='utf-8'>
-    <title>Mad Libs</title>
+    <title>Parcel</title>
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
   </head>
   <body>
-    <h1>@Model.SetVolume()</h1>
+    <h1>The volume of your package is <span>@Model.SetVolume()</span>.</h1>
+    <h1>The cost of shipping will be $<span>@Model.SetPrice()</span>.</h1>
   </body>
 </html>
